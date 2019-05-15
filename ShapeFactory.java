@@ -1,6 +1,10 @@
 /*
  * Decompiled with CFR 0.139.
  */
+/**
+ * @author Tsyrulyk Serhii
+ * @versin 1.0
+ */
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.GradientPaint;
@@ -22,6 +26,7 @@ public class ShapeFactory {
     public ShapeFactory(int shape_type) {
         switch (shape_type / 10) {
             case 1: {
+                /** создания формы звезды с заданным числом рук, центральной координатой и внешним, внутренним радиусом*/
                 this.shape = ShapeFactory.createStar(3, new Point(0, 0), (double)this.width / 2.0, (double)this.width / 2.0);
                 break;
             }
@@ -60,6 +65,7 @@ public class ShapeFactory {
                 break;
             }
             case 4: {
+                /** Свойство -  толщина границы*/
                 this.stroke = new BasicStroke(7.0f);
                 break;
             }
@@ -68,6 +74,7 @@ public class ShapeFactory {
                 break;
             }
             case 8: {
+                /** Свойство - цвет красный */
                 this.paint = Color.red;
                 break;
             }
