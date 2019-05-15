@@ -1,6 +1,10 @@
 /*
  * Decompiled with CFR 0.139.
  */
+/**
+ * @author Tsyrulyk Serhii
+ * @versin 1.0
+ */
 import java.awt.BasicStroke;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -27,7 +31,9 @@ implements ActionListener {
 
     public TitlesPanel(int _shape) {
         this.shape = _shape;
+        /** запускает одно или несколько событий действия после указанной задержки*/
         this.animation = new Timer(50, this);
+        /**Запускает анимацию после указанной задержки */
         this.animation.setInitialDelay(50);
         this.animation.start();
     }
